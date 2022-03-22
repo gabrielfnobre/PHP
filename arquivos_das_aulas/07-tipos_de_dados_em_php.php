@@ -14,4 +14,6 @@
     echo gettype(null);echo " - valor null\n";
     echo gettype('');echo " - string vazia\n";
 
+    //Além destes podemos trabahar também com objects, mas para isso teríamos que criar uma classe e objetos, objetos gerados por essa classe seria do tipo "object".
+
 ?>
