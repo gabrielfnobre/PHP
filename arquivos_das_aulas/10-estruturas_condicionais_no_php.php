@@ -2,6 +2,8 @@
 
     //ESTRUTURAS CONDICIONAIS NO PHP:
 
+    //OBS: Se os blocos de instrução tiverem apenas 1 linha, não precisamos incluir as chaves.
+
     //IF...
     //Usando if para verificar se pessoa é maior de 18 anos...
 
