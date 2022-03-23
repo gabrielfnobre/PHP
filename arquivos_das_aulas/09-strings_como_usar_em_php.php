@@ -12,8 +12,8 @@
 
     //Caracteres Escape com uso da contra barra...
     echo "\n"; //Pula uma linha
-    echo "\tFaz tab";
-    echo "\v\vFaz tab vertical";
+    echo "\tFaz tab\n";
+    echo "\v\vFaz tab vertical\n";
     echo "Quebrando linha com "
 
 ?>
