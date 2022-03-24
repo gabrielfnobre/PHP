@@ -5,4 +5,5 @@
     $lowercase = "LOWERCASE";
 
     echo strtolower($lowercase);
+
 ?>
