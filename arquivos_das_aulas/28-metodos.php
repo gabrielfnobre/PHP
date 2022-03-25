@@ -5,7 +5,8 @@
             public string $sabor = 'chocolate';
             public string $formato = 'redondo';
 
-            public function entregarBolo(string $pronto) { //Veja que para criar métodos usamos um método de acesso, que 
+            //Veja um detalhe interessante desse método é que ele retorna "void", ou seja, não tem o objetivo de retornar nada 
+            public function entregarBolo(string $pronto):void { //Veja que para criar métodos usamos um método de acesso, que 
                 if($pronto == 'sim'){                       //poderá ser "public" ou "private" seguido pela função que irá
                     echo "Já pode entregar o bolo $this->formato de $this->sabor."; //comportar o método. Lembrando da 
                 } else {                                                            //importância de sempre usar o $this para
