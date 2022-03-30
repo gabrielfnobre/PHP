@@ -1,0 +1,16 @@
+<?php
+
+    //COMPOSIÇÃO:
+    //Só relembrando o conceito de composição: É quando temos um classe que gera instâncias de uma outra classe dentro dela mesma. Por assim dizer, a instância só existe enquanto a classe geradora da instância a tiver criado.
+    //Para que usamos composição?
+    //Para que possamos usar objetos de outra classe em conjunto com os objetos da classe geradora. Podemos exemplificar isso com um carro, um carro é um único objeto, mas ele precisa de outros objetos para compô-lo. Para ter um carro vamos precisar de uma classe que utilize outros objetos de outras classes vamos ver como fazer isso...
+
+    require_once '34-composicao_02.php'; //Aqui exportamos a classe Carro para ser utilizada como um componente...
+
+    $carro_azul = new Carro('azul', 'sedan', '14', 'cromadas');//Note que ela recebe todos os atributos que serão usados nela
+                                                                //mesma e na classe que ela irá compor...
+    var_dump($carro_azul);echo PHP_EOL; //Note no var_dump que ela mesma é um objeto e possuí outro objeto...
+    
+    echo $carro_azul->mostraRodas(); //Veja que usando o método "mostraRodas" conseguimos acessar o método "mostraPneus" que
+                                        //irá nos retornar os atributos da classe composta "Pneu"...
+?>
