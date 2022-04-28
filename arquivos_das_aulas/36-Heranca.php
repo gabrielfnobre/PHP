@@ -1,6 +1,7 @@
 <?php
 
     //HERANÇA:
+    //OBS: O PHP não aceita herança múltipla (quando uma classe aceita a herança de mais de uma classe mãe), isso é feito justamente para evitar o problema diamante - problema diamente é quando 2 classes mãe possuem o mesmo nome para um método ou atributo herdado, gerando conflito de entendimento na linguagem sobre: "qual classe deve ser chamada para executar aquele atributo ou método". 
 
     //Vamos usar como classe mãe a classe "Animal" e irá herdar seus atributos e métodos sobre as classes "Cachorro" e "Gato"...
     class Animal {
